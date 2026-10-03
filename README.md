@@ -2,7 +2,8 @@
 
 A CLI utility for processing author post URLs from popular booru sites (reactor.cc, yande.re, konachan.com, e621.net, rule34.xxx).
 
-It extracts authors from URLs, generates site-specific links, downloads pages with caching, and verifies availability.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.13%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
 ## Features
 
