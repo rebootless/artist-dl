@@ -45,12 +45,12 @@ Examples:
   python3 {name} -i input_urls.txt -o output_links.txt -f failed_links.txt -l run.log
 
 Options:
-  -h, --help
-  -v, --version
-  -i, --input-file FILE
-  -o, --output-file FILE
-  -f, --failed-file FILE
-  -l, --log-file FILE
+  -h, --help                 Show this help message
+  -v, --version              Show version information
+  -i, --input-file FILE      Input file with URLs
+  -o, --output-file FILE     Output file for results (optional; stdout if omitted)
+  -f, --failed-file FILE     Failed attempts log (optional)
+  -l, --log-file FILE        Execution log (optional)
 """
 
 URLS = {

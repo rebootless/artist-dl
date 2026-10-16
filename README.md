@@ -3,7 +3,7 @@
 A CLI utility for processing author post URLs from popular booru sites (reactor.cc, yande.re, konachan.com, e621.net, rule34.xxx).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.13%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
 ## Features
 
@@ -36,10 +36,8 @@ A CLI utility for processing author post URLs from popular booru sites (reactor.
 ## Installation
 
 ```bash
-git clone <repository_url>
-cd <repository_folder>
-pip install -r requirements.txt
-````
+git clone https://github.com/rebootless/artist-dl && cd cd artist-dl && pip install -r requirements.txt
+```
 
 ### Requirements
 
@@ -67,12 +65,12 @@ python3 artist-dl.py -i input_urls.txt -o output_links.txt -f failed_links.txt -
 
 ## Options
 
-* `-h`, `--help`
-* `-v`, `--version`
-* `-i`, `--input-file FILE` — input file with URLs
-* `-o`, `--output-file FILE` — output file for results (optional, stdout if omitted)
-* `-f`, `--failed-file FILE` — failed attempts log (optional)
-* `-l`, `--log-file FILE` — execution log (optional)
+- `-h`, `--help` — show this help message
+- `-v`, `--version` — show version information
+- `-i`, `--input-file FILE` — input file with URLs
+- `-o`, `--output-file FILE` — output file for results (optional; stdout if omitted)
+- `-f`, `--failed-file FILE` — failed attempts log (optional)
+- `-l`, `--log-file FILE` — execution log (optional)
 
 ## Files
 
@@ -80,13 +78,6 @@ python3 artist-dl.py -i input_urls.txt -o output_links.txt -f failed_links.txt -
 * `output_links.txt` — valid discovered links
 * `failed_links.txt` — failed / not found results
 * `run.log` — execution logs (optional)
-
-## Output Behavior
-
-| Mode     | Result          |
-| -------- | --------------- |
-| `-o` set | write to file   |
-| omitted  | print to stdout |
 
 ## Cache
 
